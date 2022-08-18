@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Familjen Grotesk", sans-serif;
   background: #000;
@@ -95,6 +99,10 @@ section {
   text-transform: uppercase;
 }
 
+section.block {
+  height: 100%;
+  }
+
 .section-inner {
   position: absolute;
   bottom: 200px;
@@ -109,6 +117,13 @@ section {
   animation: fadeInUp 0.5s ease-in-out;
 }
 
+.section-inner h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  font-weight: 300;
+  animation: fadeInUp 0.5s ease-in-out 0.2s;
+}
+
 .section-inner h2 {
   font-size: 50px;
   font-weight: 700;
@@ -121,6 +136,23 @@ section {
   animation: fadeInUp 0.5s ease-in-out 0.4s;
   animation-fill-mode: both; /* Stop from showing at start */
 }
+
+.section-inner-galeria {
+  position: relative; 
+  /* top: 50%; */
+  /* left: 30%;  */
+  /* transform: translate(-30%, -50%);  */
+  /* text-transform: uppercase; */
+  padding-top: 100px;
+  text-align: center;
+  /* width: 80%; */
+}
+
+.section-inner-galeria h3 {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
 
 /* Background images */
 .section-a {
@@ -140,6 +172,28 @@ section {
 }
 .section-f {
   background-image: url("../img/section-f.webp");
+}
+
+.section-about {
+  background-image: url("../img/campo_juego.webp");
+}
+
+.section-about .section-inner{
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  max-width: 560px;
+}
+
+.section-contacta {
+  background-image: url("../img/campo_juego.webp");
+}
+
+.section-contacta .section-inner{
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  max-width: 560px;
 }
 
 .btn {
@@ -203,13 +257,13 @@ footer ul li {
   margin-right: 30px;
   color: #aaa;
   text-transform: uppercase;
-  font-size: 13px;
-  line-height: 2.5;
+  /* line-height: 4;  */
 }
 
 footer ul li a {
   color: #fff;
   transition: color 0.6s;
+  font-size: 24px; 
 }
 
 footer ul li a:hover {
@@ -380,20 +434,6 @@ footer ul li a:hover {
   animation-fill-mode: both;
 }
 
-.section-inner-galeria {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-30%, -50%); 
-  text-transform: uppercase;
-  text-align: center;
-  width: 80%;
-}
-
-.section-inner-galeria h3 {
-  font-size: 100px;
-  margin-bottom: 15px;
-}
 
 /* Stats */
 .stats {
@@ -416,23 +456,26 @@ footer ul li a:hover {
 }
 
 /* GALERIA */
-
-.container, .galeria {
+.container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between; 
   align-items: auto;
   align-content: start;
-  max-width: 900px;
-  min-width: 300px;
+  margin: 0px 25% 0px 25%;
+  /* border-style: solid;
+  border-color: red; */
+  /* max-width: 900px;
+  min-width: 300px; */
 }
-.container:after {
+/* .container:after {
   display: block;
   content: " placeholder ";
   margin: 10px;
   flex: 999 999 auto;
-}
+} */
+
 .item {
   flex: 0 0 auto;
   margin: 10px;
@@ -448,26 +491,8 @@ footer ul li a:hover {
   width: 270px;
 }
 
-/* .galeria1 {
-  max-width: 60%;
-  min-width: 20%;
-  display:flex;
-  border-color: red;
-  border-style: solid;
-}
+/* FIN - GALERIA */
 
-.item1 img{
-  flex-direction: row;
-  width: 250px;
-  border-color: green;
-  border-style: solid;
-}
-
-.item1 img{
-  width: 100%
-  border-color: green;
-  border-style: solid;
-} */
 
 /* Animations */
 
@@ -567,3 +592,18 @@ footer ul li a:hover {
   }
 }
 
+/**/
+ul.social-list {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+ul.social-list li {
+  display: inline-block;
+  list-style: none;
+    list-style-position: outside;
+    list-style-image: none;
+    list-style-type: none;
+  line-height: 30px;
+}
