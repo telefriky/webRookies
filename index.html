@@ -6,24 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
     <script src="/js/script.js" defer></script>
-    <base href="/">
+    <script src="/js/w3-script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/7de5edc367.js"
+      crossorigin="anonymous"
+    ></script>
+    <base href="/" />
     <title>Barbera Rookies</title>
   </head>
   <body>
     <div id="overlay"></div>
     <div id="mobile-menu" class="mobile-main-menu">
       <ul>
+        <li class="mobile-only"><a href="/equipo/sr_femenino.html">Senior Femenino</a></li>
+        <li class="mobile-only"><a href="/equipo/junior.html">Junior</a></li>
+        <li class="mobile-only"><a href="/equipo/cadete.html">Cadete</a></li>
+        <li class="mobile-only"><a href="/equipo/flag.html">Flag</a></li>
+        <li class="mobile-only"></li>
         <li><a href="#">Historia</a></li>
         <li><a href="#">Palmares</a></li>
         <li><a href="#">Galeria</a></li>
         <li><a href="#">Clupik</a></li>
-
-        <li class="mobile-only"><a href="sr_femenino.html">Senior Femenino</a></li>
-        <li class="mobile-only"><a href="junior.html">Junior</a></li>
-        <li class="mobile-only"><a href="cadete.html">Cadete</a></li>
-        <li class="mobile-only"><a href="flag.html">Flag</a></li>
+        <li class="mobile-only"></li>
+        <li class="mobile-only"><a href="about.html">Quien somos</a></li>
+        <li class="mobile-only"><a href="contacta.html">Contacta</a></li>
       </ul>
     </div>
+
     <header class="main-header">
       <div class="logo">
         <a href="index.html">
@@ -32,11 +41,13 @@
       </div>
       <nav class="desktop-main-menu">
         <ul>
-          <li><a href="sr_femenino.html">Senior Femenino</a></li>
-          <li><a href="junior.html">Junior</a></li>
-          <li><a href="cadete.html">Cadete</a></li>
-          <li><a href="flag.html">Flag</a></li>
-        </ul>
+          <li><a href="/equipo/sr_femenino.html">Senior Femenino</a></li>
+          <li><a href="/equipo/junior.html">Junior</a></li>
+          <li><a href="/equipo/cadete.html">Cadete</a></li>
+          <li><a href="/equipo/flag.html">Flag</a></li>
+          <li><a href="about.html">Quien somos</a></li>
+          <li><a href="contacta.html">Contacta</a></li>
+          </ul>
       </nav>
     </header>
 
@@ -52,7 +63,7 @@
       <div class="section-inner">
         <h4></h4>
         <h2>Senior Femenino</h2>
-        <a href="sr_femenino.html" class="btn">
+        <a href="equipo/sr_femenino.html" class="btn">
           <div class="hover"></div>
           <span>Equipo</span>
         </a>
@@ -79,7 +90,7 @@
       <div class="section-inner">
         <h4></h4>
         <h2>Junior</h2>
-        <a href="junior.html" class="btn">
+        <a href="equipo/junior.html" class="btn">
           <div class="hover"></div>
           <span>Equipo</span>
         </a>
@@ -106,7 +117,7 @@
       <div class="section-inner">
         <h4></h4>
         <h2>Cadete</h2>
-        <a href="cadete.html" class="btn">
+        <a href="equipo/cadete.html" class="btn">
           <div class="hover"></div>
           <span>Equipo</span>
         </a>
@@ -133,7 +144,7 @@
       <div class="section-inner">
         <h4></h4>
         <h2>Flag</h2>
-        <a href="flag.html" class="btn">
+        <a href="equipo/flag.html" class="btn">
           <div class="hover"></div>
           <span>Equipo</span>
         </a>
@@ -141,7 +152,6 @@
           <div class="hover"></div>
           <span>Galeria</span>
         </a>
-
       </div>
 
       <div class="scroll-arrow">
@@ -156,14 +166,7 @@
       </div>
     </section>
 
-
-    <footer>
-      <ul>
-        <li>Barbera Rookies &copy; 2022</li>
-        <li><a href="https://www.youtube.com/channel/UC3IZkWPPrfCodbp2CwZpuZA" target="_blank">YouTube</a></li>
-        <li><a href="https://www.instagram.com/barbera_rookies/" target="_blank">Instagram</a></li>
-        <li><a href="https://www.facebook.com/barberarookiescfa" target="_blank">Facebook</a></li>
-      </ul>
-    </footer>
+    <div w3-include-html="/includes/footer.html"></div> 
+  
   </body>
 </html>
