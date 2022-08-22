@@ -1,0 +1,514 @@
+{
+    "CONFIG": [
+        {
+            "ruta": "http://127.0.0.1:8080/equipo/"
+        }
+    ],
+    "CADETE": [
+        {
+            "dorsal": 10,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador01.jpg"
+        },
+        {
+            "dorsal": 11,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador02.jpg"
+        },
+        {
+            "dorsal": 12,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador03.jpg"
+        },
+        {
+            "dorsal": 13,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador04.jpg"
+        },
+        {
+            "dorsal": 14,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador01.jpg"
+        },
+        {
+            "dorsal": 15,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador02.jpg"
+        },
+        {
+            "dorsal": 16,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador03.jpg"
+        },
+        {
+            "dorsal": 17,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador04.jpg"
+        },
+        {
+            "dorsal": 18,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador01.jpg"
+        },
+        {
+            "dorsal": 19,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador02.jpg"
+        },
+        {
+            "dorsal": 20,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador03.jpg"
+        },
+        {
+            "dorsal": 21,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador04.jpg"
+        }
+    ],
+    "FLAG": [
+        {
+            "dorsal": 10,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador01.jpg"
+        },
+        {
+            "dorsal": 11,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador02.jpg"
+        },
+        {
+            "dorsal": 12,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador03.jpg"
+        },
+        {
+            "dorsal": 13,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador04.jpg"
+        },
+        {
+            "dorsal": 14,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador01.jpg"
+        },
+        {
+            "dorsal": 15,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador02.jpg"
+        },
+        {
+            "dorsal": 16,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador03.jpg"
+        },
+        {
+            "dorsal": 17,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador04.jpg"
+        },
+        {
+            "dorsal": 18,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador01.jpg"
+        },
+        {
+            "dorsal": 19,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador02.jpg"
+        },
+        {
+            "dorsal": 20,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador03.jpg"
+        },
+        {
+            "dorsal": 21,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador04.jpg"
+        }
+    ],
+    "JUNIOR": [
+        {
+            "dorsal": 10,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador01.jpg"
+        },
+        {
+            "dorsal": 11,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador02.jpg"
+        },
+        {
+            "dorsal": 12,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador03.jpg"
+        },
+        {
+            "dorsal": 13,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador04.jpg"
+        },
+        {
+            "dorsal": 14,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador01.jpg"
+        },
+        {
+            "dorsal": 15,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador02.jpg"
+        },
+        {
+            "dorsal": 16,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador03.jpg"
+        },
+        {
+            "dorsal": 17,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador04.jpg"
+        },
+        {
+            "dorsal": 18,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador01.jpg"
+        },
+        {
+            "dorsal": 19,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador02.jpg"
+        },
+        {
+            "dorsal": 20,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador03.jpg"
+        },
+        {
+            "dorsal": 21,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador04.jpg"
+        }
+    ],
+    "SR_FEMENINO": [
+        {
+            "dorsal": 10,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador01.jpg"
+        },
+        {
+            "dorsal": 11,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador02.jpg"
+        },
+        {
+            "dorsal": 12,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador03.jpg"
+        },
+        {
+            "dorsal": 13,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador04.jpg"
+        },
+        {
+            "dorsal": 14,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador01.jpg"
+        },
+        {
+            "dorsal": 15,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador02.jpg"
+        },
+        {
+            "dorsal": 16,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador03.jpg"
+        },
+        {
+            "dorsal": 17,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador04.jpg"
+        },
+        {
+            "dorsal": 18,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador01.jpg"
+        },
+        {
+            "dorsal": 19,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador02.jpg"
+        },
+        {
+            "dorsal": 20,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador03.jpg"
+        },
+        {
+            "dorsal": 21,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador04.jpg"
+        },
+        {
+            "dorsal": 22,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador02.jpg"
+        },
+        {
+            "dorsal": 23,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador03.jpg"
+        },
+        {
+            "dorsal": 24,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador04.jpg"
+        },
+        {
+            "dorsal": 25,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador01.jpg"
+        },
+        {
+            "dorsal": 26,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador02.jpg"
+        },
+        {
+            "dorsal": 27,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador03.jpg"
+        },
+        {
+            "dorsal": 28,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador04.jpg"
+        },
+        {
+            "dorsal": 29,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador01.jpg"
+        },
+        {
+            "dorsal": 30,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador02.jpg"
+        },
+        {
+            "dorsal": 31,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador03.jpg"
+        },
+        {
+            "dorsal": 32,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador04.jpg"
+        }
+    ],
+    "SR_MASCULINO": [
+        {
+            "dorsal": 10,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador01.jpg"
+        },
+        {
+            "dorsal": 11,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador02.jpg"
+        },
+        {
+            "dorsal": 12,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador03.jpg"
+        },
+        {
+            "dorsal": 13,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador04.jpg"
+        },
+        {
+            "dorsal": 14,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador01.jpg"
+        },
+        {
+            "dorsal": 15,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador02.jpg"
+        },
+        {
+            "dorsal": 16,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador03.jpg"
+        },
+        {
+            "dorsal": 17,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador04.jpg"
+        },
+        {
+            "dorsal": 18,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador01.jpg"
+        },
+        {
+            "dorsal": 19,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador02.jpg"
+        },
+        {
+            "dorsal": 20,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador03.jpg"
+        },
+        {
+            "dorsal": 21,
+            "nombre": "Nombre",
+            "apellidos": "jugador",
+            "posicion": "QB",
+            "imagen": "jugador04.jpg"
+        }
+    ]
+}

@@ -1,0 +1,69 @@
+{
+  "CONFIG": [
+    {
+      "ruta": "http://127.0.0.1:8080/galeria/"
+    }
+  ],
+  "CADETE": [
+    {
+      "thumbnail": "Rookies-Osas_01_tn.jpg",
+      "imagen": "Rookies-Osas_01.jpg"
+    }
+  ],
+  "FLAG": [
+    {
+      "thumbnail": "Rookies-Osas_02_tn.jpg",
+      "imagen": "Rookies-Osas_02.jpg"
+    }
+  ],
+  "JUNIOR": [
+    {
+      "thumbnail": "Rookies-Osas_03_tn.jpg",
+      "imagen": "Rookies-Osas_03.jpg"
+    }
+  ],
+  "SR_FEMENINO": [
+    {
+      "thumbnail": "Rookies-Osas_05_tn.jpg",
+      "imagen": "Rookies-Osas_11.jpg"
+    },
+    {
+      "thumbnail": "Rookies-Osas_04_tn.jpg",
+      "imagen": "Rookies-Osas_04.jpg"
+    },
+    {
+      "thumbnail": "Rookies-Osas_05_tn.jpg",
+      "imagen": "Rookies-Osas_11.jpg"
+    },
+    {
+      "thumbnail": "Rookies-Osas_06_tn.jpg",
+      "imagen": "Rookies-Osas_06.jpg"
+    },
+    {
+      "thumbnail": "Rookies-Osas_07_tn.jpg",
+      "imagen": "Rookies-Osas_07.jpg"
+    },
+    {
+      "thumbnail": "Rookies-Osas_04_tn.jpg",
+      "imagen": "Rookies-Osas_08.jpg"
+    },
+    {
+      "thumbnail": "Rookies-Osas_05_tn.jpg",
+      "imagen": "Rookies-Osas_11.jpg"
+    },
+    {
+      "thumbnail": "Rookies-Osas_06_tn.jpg",
+      "imagen": "Rookies-Osas_10.jpg"
+    },
+    {
+      "thumbnail": "Rookies-Osas_07_tn.jpg",
+      "imagen": "Rookies-Osas_11.jpg"
+    }
+  ],
+  "SR_MASCULINO": [
+    {
+      "thumbnail": "Rookies-Osas_05_tn.jpg",
+      "imagen": "Rookies-Osas_05.jpg"
+    }
+  ]
+}
