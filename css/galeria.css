@@ -1,0 +1,36 @@
+.section-inner-galeria {
+  position: relative;
+  padding-top: 120px;
+}
+
+/* GALERIA */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: auto;
+}
+
+.container h3 {
+  font-size: 60px;
+  margin-bottom: 15px;
+  text-align: auto;
+}
+
+.item {
+  flex: 0 0 auto;
+  margin: 10px;
+}
+
+.item-center {
+  justify-content: space-around;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.item img {
+  width: 270px;
+}
+
+/* FIN - GALERIA */
