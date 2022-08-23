@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <base href="/equipo/" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/equipo.css" />
+    <!-- <link rel="stylesheet" href="/css/galeria.css" /> -->
     <script src="/js/script.js" defer></script>
     <script src="/js/w3-script.js" defer></script>
     <script src="/js/equipo.js" defer></script>
@@ -27,13 +27,17 @@
         <li class="mobile-only"><a href="/equipo/cadete.html">Cadete</a></li>
         <li class="mobile-only"><a href="/equipo/flag.html">Flag</a></li>
         <li class="mobile-only"></li>
-        <li><a href="#">Historia</a></li>
-        <li><a href="#">Palmares</a></li>
-        <li><a href="#">Galeria</a></li>
-        <li><a href="#">Clupik</a></li>
+        <li><a href="/historia.html">Historia</a></li>
+        <li><a href="/palmares.html">Palmares</a></li>
+        <li><a href="/galeria.html">Galeria</a></li>
+        <li>
+          <a href="https://barberarookiescfa.clupik.app/es" target="_blank"
+            >Clupik</a
+          >
+        </li>
         <li class="mobile-only"></li>
-        <li class="mobile-only"><a href="about.html">Quien somos</a></li>
-        <li class="mobile-only"><a href="contacta.html">Contacta</a></li>
+        <li class="mobile-only"><a href="/about.html">Quien somos</a></li>
+        <li class="mobile-only"><a href="/contacta.html">Contacta</a></li>
       </ul>
     </div>
 
@@ -49,8 +53,8 @@
           <li><a href="/equipo/junior.html">Junior</a></li>
           <li><a href="/equipo/cadete.html">Cadete</a></li>
           <li><a href="/equipo/flag.html">Flag</a></li>
-          <li><a href="about.html">Quien somos</a></li>
-          <li><a href="contacta.html">Contacta</a></li>
+          <li><a href="/about.html">Quien somos</a></li>
+          <li><a href="/contacta.html">Contacta</a></li>
         </ul>
       </nav>
     </header>
@@ -63,7 +67,7 @@
     </button>
 
     <section class="section-sr-femenino">
-      <div class="section-inner">
+      <div class="section-inner-center">
         <h2>Senior Femenino</h2>
         <h3>Campeonas de España 2022</h3>
         <a href="./sr_femenino.html#alineacion" class="btn">
@@ -75,13 +79,12 @@
           <span>Galeria</span>
         </a>
       </div>
-
     </section>
 
-    <section class="block">
-      <div class="section-inner-galeria">
-        <div class=""><a name="alineacion"></a></div>
-        <div class="container item-center"><h3>Las jugadoras</h3></div>
+    <section class="block section-inner-alineacion">
+      <div class="item"><a name="alineacion"></a></div>
+      <div class="container">
+        <div class="item-center"><h3>Las jugadoras</h3></div>
         <div id="imagenes" class="container"></div>
       </div>
     </section>

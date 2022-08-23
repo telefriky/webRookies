@@ -22,9 +22,9 @@
 // });
 
 // carga imagenes a partir de Objeto con datos
-const loadImages = (node, ruta, datos) => {
+const loadImages = (nodo, ruta, datos) => {
 
-  const imagenes = document.getElementById(node);
+  const imagenes = document.getElementById(nodo);
 
   for (i = 0; i < datos.length; i++) {
     imagenes.appendChild(nuevaImagen(ruta, datos[i]))
@@ -38,9 +38,10 @@ const nuevaImagen = (ruta, item) => {
   // console.log(url_imagen)
   var img = document.createElement('img');
   img.src = url_imagen;
+  // img.src = url_thumbnail;
   img.alt = ''
   img.classList.add('img-responsive')
-  // img.loading = 'lazy';
+  img.loading = 'lazy';
 
   var anchor = document.createElement('a');
   anchor.removeAttribute('href');

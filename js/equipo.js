@@ -1,7 +1,7 @@
 // carga imagenes a partir de Objeto con datos
-const loadImages = (ruta, datos) => {
+const loadImages = (nodo,ruta, datos) => {
 
-  const imagenes = document.getElementById("imagenes");
+  const imagenes = document.getElementById(nodo);
 
   datos.map((item) => {
 
@@ -18,7 +18,7 @@ const loadImages = (ruta, datos) => {
     div.appendChild(img)
 
     var h4_nombre = document.createElement("h4");
-    h4_nombre.innerText =  `#${item.dorsal} - ${item.nombre} ${item.apellidos}`
+    h4_nombre.innerText = `#${item.dorsal} - ${item.nombre} ${item.apellidos}`
     div.appendChild(h4_nombre)
 
     var h4_apellidos = document.createElement("h4");
@@ -30,13 +30,15 @@ const loadImages = (ruta, datos) => {
   });
 }
 
-// carga datos e imagenes
-const datos = fetch("/equipo/datos.json")
-  .then((response) => response.json())
-  .then((data) => {
-    const ruta = data.CONFIG[0].ruta;
-    const datosCategoria = data.SR_FEMENINO
-    loadImages(ruta, datosCategoria)
-  });
+const cargaImagenes = async () => {
+  // carga datos e imagenes
+  const datos = await fetch("/equipo/datos.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const ruta = data.CONFIG[0].ruta;
+      const datosCategoria = data.SR_FEMENINO
+      loadImages("imagenes",ruta, datosCategoria)
+    });
+}
 
-
+cargaImagenes();

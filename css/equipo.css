@@ -13,3 +13,64 @@
 .section-flag {
   background-image: url("/equipo/img/");
 }
+
+.section-inner-alineacion {
+  position: relative;
+  /* padding-top: 120px; */
+}
+
+/* efecto grayscale-color para las imagenes de los jugadores */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+/* .container h3 {
+  font-size: 24px;
+  font-weight: 300;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  text-align: center;
+} */
+
+.item {
+  flex: 0 0 auto;
+  margin: 10px;
+}
+
+.item h4 {
+  text-align: center;
+}
+
+/* efecto grayscale-color para las imagenes de los jugadores */
+.item img {
+  width: 270px;
+  filter: grayscale(1);
+  transition: 0.5s;
+}
+
+.item img:hover {
+  filter: grayscale(0);
+}
+
+ .item-center {
+  justify-content: space-around;
+  flex-grow:1;
+  text-align: center;
+}
+
+.item-center h3 {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  font-size: 4em;
+  font-weight: 300; 
+}
+
+
+
+

@@ -25,7 +25,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-thumbnail.css"
     />
-
     <script
       src="https://kit.fontawesome.com/7de5edc367.js"
       crossorigin="anonymous"
@@ -40,21 +39,10 @@
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <base href="" />
+
     <title>Barbera Rookies</title>
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
-  <body class="demos">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
-        your experience.
-      </p>
-    <![endif]-->
+  <body>
     <div id="overlay"></div>
     <div id="mobile-menu" class="mobile-main-menu">
       <ul>
@@ -65,13 +53,17 @@
         <li class="mobile-only"><a href="/equipo/cadete.html">Cadete</a></li>
         <li class="mobile-only"><a href="/equipo/flag.html">Flag</a></li>
         <li class="mobile-only"></li>
-        <li><a href="#">Historia</a></li>
-        <li><a href="#">Palmares</a></li>
-        <li><a href="#">Galeria</a></li>
-        <li><a href="#">Clupik</a></li>
+        <li><a href="/historia.html">Historia</a></li>
+        <li><a href="/palmares.html">Palmares</a></li>
+        <li><a href="/galeria.html">Galeria</a></li>
+        <li>
+          <a href="https://barberarookiescfa.clupik.app/es" target="_blank"
+            >Clupik</a
+          >
+        </li>
         <li class="mobile-only"></li>
-        <li class="mobile-only"><a href="about.html">Quien somos</a></li>
-        <li class="mobile-only"><a href="contacta.html">Contacta</a></li>
+        <li class="mobile-only"><a href="/about.html">Quien somos</a></li>
+        <li class="mobile-only"><a href="/contacta.html">Contacta</a></li>
       </ul>
     </div>
 
@@ -87,8 +79,8 @@
           <li><a href="/equipo/junior.html">Junior</a></li>
           <li><a href="/equipo/cadete.html">Cadete</a></li>
           <li><a href="/equipo/flag.html">Flag</a></li>
-          <li><a href="about.html">Quien somos</a></li>
-          <li><a href="contacta.html">Contacta</a></li>
+          <li><a href="/about.html">Quien somos</a></li>
+          <li><a href="/contacta.html">Contacta</a></li>
         </ul>
       </nav>
     </header>
@@ -100,19 +92,16 @@
       <span class="hamburger-bottom"></span>
     </button>
 
-    <section class="section pdb0 block">
-      <div class="container-fluid section-inner-galeria">
-        <div class="container item-center"><h3>Galeria</h3></div>
-
-        <div class="demo-gallery dark container">
-          <!-- inicio  animated-thumbnails-gallery -->
+    <section class="block">
+      <div class="section-inner-galeria">
+        <div class="container">
+          <!-- inicio  galeria-imagenes -->
           <div
-            id="animated-thumbnails-gallery"
-            class="gallery-container justified-gallery"
+            id="galeria-imagenes"
+            class="gallery-container"
           >
-
           </div>
-          <!-- fin animated-thumbnails-gallery -->
+          <!-- fin galeria-imagenes -->
         </div>
       </div>
     </section>
@@ -134,22 +123,22 @@
           .then((data) => {
             const ruta = data.CONFIG[0].ruta;
             const datosCategoria = data.SR_FEMENINO;
-            loadImages("animated-thumbnails-gallery", ruta, datosCategoria);
+            loadImages("galeria-imagenes", ruta, datosCategoria);
             return true;
           });
         // Fin - creacion nodos para imagenes
 
         window.prettyPrint && prettyPrint();
-        jQuery("#animated-thumbnails-gallery")
+        jQuery("#galeria-imagenes")
           .justifiedGallery({
             captions: false,
             // lastRow: "hide",
             rowHeight: 250,
-            margins: 5,
+            margins: 10,
           })
           .on("jg.complete", async function () {
             window.lightGallery(
-              document.getElementById("animated-thumbnails-gallery"),
+              document.getElementById("galeria-imagenes"),
               {
                 autoplayFirstVideo: false,
                 pager: false,
@@ -166,31 +155,6 @@
           });
       });
 
-      //   jQuery("#animated-thumbnails-gallery")
-      //     .justifiedGallery({
-      //       captions: false,
-      //       lastRow: "hide",
-      //       rowHeight: 250,
-      //       margins: 5,
-      //     })
-      //     .on("jg.complete", function () {
-      //       window.lightGallery(
-      //         document.getElementById("animated-thumbnails-gallery"),
-      //         {
-      //           autoplayFirstVideo: false,
-      //           pager: false,
-      //           galleryId: "nature",
-      //           plugins: [lgZoom, lgThumbnail],
-      //           mobileSettings: {
-      //             controls: false,
-      //             showCloseIcon: false,
-      //             download: false,
-      //             rotate: false,
-      //           },
-      //         }
-      //       );
-      //     });
-      // });
     </script>
   </body>
 </html>
