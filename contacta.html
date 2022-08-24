@@ -4,21 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <script src="/js/script.js" defer></script>
-    <script src="/js/w3-script.js" defer></script>
+    <meta name="robots" content="noindex, follow" />
+
+    <link rel="icon" type="/img/png" href="/favicon.ico" />
+
     <script
       src="https://kit.fontawesome.com/7de5edc367.js"
       crossorigin="anonymous"
     ></script>
-    <base href="/" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/contacta.css" />
+
+    <!-- <script src="/js/contacta.js" defer></script> -->
+    <script src="/js/script.js" defer></script>
+    <script src="/js/w3-script.js" defer></script>
+
     <title>Barbera Rookies</title>
   </head>
   <body>
     <div id="overlay"></div>
     <div id="mobile-menu" class="mobile-main-menu">
       <ul>
-        <li class="mobile-only"><a href="/equipo/sr_femenino.html">Senior Femenino</a></li>
+        <li class="mobile-only">
+          <a href="/equipo/sr_femenino.html">Senior Femenino</a>
+        </li>
         <li class="mobile-only"><a href="/equipo/junior.html">Junior</a></li>
         <li class="mobile-only"><a href="/equipo/cadete.html">Cadete</a></li>
         <li class="mobile-only"><a href="/equipo/flag.html">Flag</a></li>
@@ -47,7 +57,7 @@
           <li><a href="/equipo/flag.html">Flag</a></li>
           <li><a href="about.html">Quien somos</a></li>
           <li><a href="contacta.html">Contacta</a></li>
-          </ul>
+        </ul>
       </nav>
     </header>
 
@@ -60,14 +70,73 @@
 
     <!-- Section A -->
     <section class="section-contacta">
-      <div class="section-inner">
-        <h4></h4>
+      <div class="container"></div>
+      <div class="">
         <h2>Contacta</h2>
-      </div>
 
+        <!-- -------------------------------------------------------------------------- -->
+        <!-- https://uicookies.com/free-html-contact-forms/ -->
+        <div class="container">
+          <form id="contact" action="mailto:contacto@lineadecodigo.com" method="post" name="form1">
+            <h2>Contacta con nosotros</h2>
+            <h4>Evíanos tu mensaje, responderemos lo antes posible</h4>
+            <fieldset>
+              <input
+                placeholder="Nombre"
+                type="text"
+                tabindex="1"
+                required
+                autofocus
+              />
+            </fieldset>
+
+            <fieldset>
+              <input
+                placeholder="Dirección e-mail"
+                type="email"
+                tabindex="2"
+                required
+              />
+            </fieldset>
+
+            <fieldset>
+              <input
+                placeholder="Número teléfono o móvil"
+                type="tel"
+                tabindex="3"
+                required
+              />
+            </fieldset>
+
+            <fieldset>
+              <textarea
+                placeholder="Escribenos tu mensaje aquí...."
+                tabindex="5"
+                required
+              ></textarea>
+            </fieldset>
+
+            <fieldset>
+              <button
+                name="submit"
+                type="submit"
+                id="contact-submit"
+                tabindex="6"
+                class="btn"
+                data-submit="...Enviando"
+              >
+                <div class="hover"></div>
+                <span>Enviar</span>
+              </>
+              <!-- <button name="submit" type="submit" id="contact-submit" data-submit="...Enviando">                  <div class="hover"></div> 
+                  <span>Enviar</span></button> -->
+            </fieldset>
+          </form>
+        </div>
+        <!-- --------------------------------------------------------------------------- -->
+      </div>
     </section>
 
-    <div w3-include-html="/includes/footer.html"></div> 
-  
+    <div w3-include-html="/includes/footer.html"></div>
   </body>
 </html>

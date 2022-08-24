@@ -1,0 +1,127 @@
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 20px;
+}
+
+#contact {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h2 {
+    display: block;
+    font-size: 60px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  
+#contact h3 {
+  display: block;
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  margin: 0 0 5px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  margin: 0 0 5px;
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 15px 50px;
+  margin-top: 10px;
+  font-weight: bold;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.copyright {
+  text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #ddd;
+}
+
+:-moz-placeholder {
+  color: #ddd;
+}
+
+::-moz-placeholder {
+  color: #ddd;
+}
+
+:-ms-input-placeholder {
+  color: #ddd;
+}
+

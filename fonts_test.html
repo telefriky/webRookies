@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- <link rel="stylesheet" href="/css/style.css" /> -->
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
+        -o-font-smoothing: antialiased;
+        font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Familjen Grotesk", sans-serif;
+        background: rgb(2, 45, 91);
+        color: #fff;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      section.test {
+        padding: 100px;
+        text-align: left;
+        color: white;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: auto;
+        text-transform: uppercase;
+      }
+
+      .item {
+        flex: 0 0 auto;
+        margin: 10px;
+        padding-left: 20px;
+      }
+
+      .strokeme {
+        color: black;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+          1px 1px 0 white;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="test">
+      <div class="container">
+        <div class="item">
+          <a href="https://nekocalc.com/es/px-a-em-conversor" target="_blank"
+            >https://nekocalc.com/es/px-a-em-conversor</a
+          >
+        </div>
+      </div>
+      <div class="container">
+        <div class="item">
+          <p style="font-size: 1em">SENIOR FEMENINO 1em</p>
+          <p style="font-size: 1.25em">SENIOR FEMENINO 1.25em</p>
+          <p style="font-size: 1.5em">SENIOR FEMENINO 1.5em</p>
+          <p style="font-size: 1.75em">SENIOR FEMENINO 1.75em</p>
+          <p style="font-size: 2em">SENIOR FEMENINO 2em</p>
+          <p style="font-size: 2.25em">SENIOR FEMENINO 2.25em</p>
+          <p style="font-size: 2.5em">SENIOR FEMENINO 2.5em</p>
+          <p style="font-size: 2.75em">SENIOR FEMENINO 2.75em</p>
+          <p style="font-size: 3em">SENIOR FEMENINO 3em</p>
+          <p style="font-size: 3.25em">SENIOR FEMENINO 3.25em</p>
+          <p style="font-size: 3.5em">SENIOR FEMENINO 3.5em</p>
+          <p style="font-size: 3.75em">SENIOR FEMENINO 3.75em</p>
+          <p class="strokeme"  style="font-size: 3.75em">SENIOR FEMENINO 3.75em</p>
+        </div>
+        <div class="item">
+          <p style="font-size: 16px">SENIOR FEMENINO 16 px</p>
+          <p style="font-size: 18px">SENIOR FEMENINO 18 px</p>
+          <p style="font-size: 20px">SENIOR FEMENINO 20 px</p>
+          <p style="font-size: 26px">SENIOR FEMENINO 26 px</p>
+          <p style="font-size: 32px">SENIOR FEMENINO 32 px</p>
+          <p style="font-size: 40px">SENIOR FEMENINO 40 px</p>
+          <p style="font-size: 45px">SENIOR FEMENINO 45 px</p>
+          <p style="font-size: 50px">SENIOR FEMENINO 50 px</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
