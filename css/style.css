@@ -79,6 +79,7 @@ ul {
 .logo {
   width: 210px;
   height: auto;
+  height: 100px;
 }
 
 .logo img {
