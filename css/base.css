@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&display=swap");
-
 *,
 *::before,
 *::after {
@@ -14,17 +12,15 @@
   -o-font-smoothing: antialiased;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
 
+body {
+  background: #000;
+  color: #fff;
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Familjen Grotesk", sans-serif;
-  background: #000;
-  color: #fff;
 }
 
 a {
@@ -40,7 +36,55 @@ ul {
   list-style: none;
 }
 
-/* Header/Navbar */
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+li,
+a {
+  font-family: "Familjen Grotesk", sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2rem;
+}
+h5 {
+  font-size: 1.5rem;
+}
+p {
+  font-size: 1rem;
+}
+/****************************/
+/* container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+}
+
+.item {
+  flex: 0 0 auto;
+}
+
+/****************************/
+/* main-header  */
 .main-header {
   position: fixed;
   top: 0;
@@ -75,7 +119,8 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
 }
 
-/* Logo */
+/****************************/
+/* Logo  */
 .logo {
   width: 210px;
   height: auto;
@@ -88,7 +133,8 @@ ul {
   height: auto;
 }
 
-/* Desktop Menu */
+/****************************/
+/* MENU: desktop   */
 .desktop-main-menu {
   margin-right: 50px;
 }
@@ -104,7 +150,7 @@ ul {
 }
 
 .desktop-main-menu ul li a {
-  font-size: 1.3em;
+  font-size: 1rem;
 }
 
 /* Menu item bottom border */
@@ -127,187 +173,41 @@ ul {
   transition-duration: 0.4s;
 }
 
-/* Sections */
-section {
-  position: relative;
-  height: 100vh;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-transform: uppercase;
-}
-
-/* .separador {
-  height: 50px;
-  width: 100%;
-  top: -25px;
-  
-  background: rgb(255, 255, 255);
-  background: -moz-linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(0, 0, 0, 1) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background: -webkit-linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(0, 0, 0, 1) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(0, 0, 0, 1) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
-} */
-
-section.block {
-  height: 100%;
-}
-
-.section-inner {
-  position: absolute;
-  bottom: 200px;
-  left: 150px;
-  max-width: 560px;
-}
-
-.section-right {
-  position: absolute;
-  top: 150px;
-  right: 150px;
-  max-width: 560px;
-}
-
-.section-inner h4,
-.section-right h4 {
-  font-size: 1.5em;
-  /* font-size: 22px; */
-  margin-bottom: 5px;
-  font-weight: 300;
-  animation: fadeInUp 0.5s ease-in-out;
-}
-
-.section-inner h3,
-.section-right h3 {
-  font-size: 2em;
-  /* font-size: 22px; */
-  margin-bottom: 5px;
-  font-weight: 300;
-  animation: fadeInUp 0.5s ease-in-out 0.2s;
-}
-
-.section-inner h2,
-.section-right h2 {
-  font-size: 3.5em;
-  /* font-size: 22px; */
-  font-weight: 700;
-  margin-bottom: 20px;
-  animation: fadeInUp 0.5s ease-in-out 0.2s;
-  animation-fill-mode: both; /* Stop from showing at start */
-}
-
-.section-inner a,
-.section-right a {
-  animation: fadeInUp 0.5s ease-in-out 0.4s;
-  animation-fill-mode: both; /* Stop from showing at start */
-}
-
-/* Background images */
-.section-a {
-  background-image: url("../img/section-a.webp");
-}
-.section-b {
-  background-image: url("../img/section-b.webp");
-}
-.section-c {
-  background-image: url("../img/section-c.webp");
-}
-.section-d {
-  background-image: url("../img/section-d.webp");
-}
-.section-e {
-  background-image: url("../img/section-e.webp");
-}
-.section-f {
-  background-image: url("../img/section-f.webp");
-}
-
-.section-about {
-  background-image: url("../img/campo_juego.webp");
-}
-
-.section-about .section-inner {
-  position: absolute;
-  top: 150px;
-  left: 150px;
-  max-width: 560px;
-}
-
-.section-contacta {
-  background-image: url("../img/campo_juego.webp");
-}
-
-.section-contacta .section-inner {
-  position: absolute;
-  top: 150px;
-  left: 150px;
-  max-width: 560px;
-}
-
-.btn {
-  position: relative;
-  display: inline-block;
+/****************************/
+/* Hamburger Menu */
+.hamburger {
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  z-index: 10;
   cursor: pointer;
-  text-align: center;
-  min-width: 130px;
-  padding: 15px 50px;
-  margin-top: 10px;
-  border: 2px solid #fff;
-  text-transform: uppercase;
-  font-weight: bold;
-  overflow: hidden;
-  z-index: 2;
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
 }
 
-.btn:hover span {
-  color: #000;
-}
-
-.btn .hover {
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
   position: absolute;
+  width: 20px;
+  height: 2px;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  color: #000;
-  z-index: -1;
-  transform: translateY(100%);
-  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  background: #fff;
+  transition: all 0.5s;
 }
 
-.btn:hover .hover {
-  transform: translateY(0);
+.hamburger-middle {
+  transform: translateY(5px);
 }
 
-.scroll-arrow {
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: fadeBounce 5s infinite;
+.hamburger-bottom {
+  transform: translateY(10px);
 }
 
-/* Footer */
-/* footer {
-  position: relative;
-  padding: 55px 0;
-} */
-
+/****************************/
 /* footer fijo a pie de pagina */
 footer {
   position: fixed;
@@ -350,7 +250,6 @@ footer ul li {
   margin-right: 30px;
   color: #aaa;
   text-transform: uppercase;
-  /* line-height: 4;  */
 }
 
 footer ul li a {
@@ -363,37 +262,21 @@ footer ul li a:hover {
   color: #aaa;
 }
 
-/* Hamburger Menu */
-.hamburger {
-  position: fixed;
-  top: 40px;
-  right: 20px;
-  z-index: 10;
-  cursor: pointer;
-  width: 20px;
-  height: 20px;
-  background: none;
-  border: none;
+ul.social-list {
+  padding: 0;
+  list-style: none;
+  margin: 0;
 }
 
-.hamburger-top,
-.hamburger-middle,
-.hamburger-bottom {
-  position: absolute;
-  width: 20px;
-  height: 2px;
-  top: 0;
-  left: 0;
-  background: #fff;
-  transition: all 0.5s;
-}
-
-.hamburger-middle {
-  transform: translateY(5px);
-}
-
-.hamburger-bottom {
-  transform: translateY(10px);
+ul.social-list li {
+  display: inline-block;
+  list-style: none;
+  list-style-position: outside;
+  list-style-image: none;
+  list-style-type: none;
+  line-height: 30px;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 /* Transition hamburger to X when open */
@@ -476,7 +359,7 @@ footer ul li a:hover {
 
 .mobile-main-menu ul li {
   margin-bottom: 20px;
-  font-size: 1.3em;
+  font-size: 1rem;
   text-transform: uppercase;
   border-bottom: 1px #555 dotted;
   width: 100%;
@@ -493,63 +376,146 @@ footer ul li a:hover {
   color: #aaa;
 }
 
-/* Inner Pages */
-.bg-sr-femenino {
-  background-image: url("../img/campeonas-2022.jpg");
-}
-
-.bg-junior {
-  background-image: url("../img/equipojunior.jpeg");
-}
-
-.bg-cadete {
-  background-image: url("../img/cadete.webp");
-}
-
-.bg-flag {
-  background-image: url("../img/flag.webp");
-}
-
-.section-animate {
-  animation: fadeIn 2s ease-in-out;
-}
-
-.section-inner-center {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  text-transform: uppercase;
+/****************************/
+/* Botones   */
+.btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
   text-align: center;
-  width: 80%;
+  min-width: 150px;
+  padding: 15px 20px;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  overflow: hidden;
+  z-index: 2;
 }
 
-.section-inner-center h3 {
-  font-size: 5em;
-  margin-bottom: 15px;
+.btn:hover span {
+  color: #000;
+}
+
+.btn .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  color: #000;
+  z-index: -1;
+  transform: translateY(100%);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn:hover .hover {
+  transform: translateY(0);
+}
+
+/* FIN ZONA COMUN*/
+
+/**/
+.semi-transparente {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/****************************/
+/* arrow : flecha abajo   */
+.scroll-arrow {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: fadeBounce 5s infinite;
+}
+
+/****************************/
+/* secciones */
+section {
+  position: relative;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+}
+
+.block {
+  height: 100%;
+}
+
+/* home */
+.section-inner {
+  position: absolute;
+  bottom: 200px;
+  left: 150px;
+  max-width: 560px;
+}
+
+.section-right {
+  position: absolute;
+  top: 150px;
+  right: 150px;
+  max-width: 560px;
+}
+
+.section-inner h4,
+.section-right h4 {
+  font-size: 1.5em;
+  /* font-size: 22px; */
+  margin-bottom: 5px;
+  font-weight: 300;
   animation: fadeInUp 0.5s ease-in-out;
 }
 
-.section-inner-center p {
-  font-size: 2.5px;
+.section-inner h3,
+.section-right h3 {
+  font-size: 2em;
+  /* font-size: 22px; */
+  margin-bottom: 5px;
+  font-weight: 300;
   animation: fadeInUp 0.5s ease-in-out 0.2s;
-  animation-fill-mode: both;
 }
 
-
-/* Stats */
-.stats {
-  max-width: 960px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  text-transform: uppercase;
+.section-inner h2,
+.section-right h2 {
+  font-size: 3.5em;
+  /* font-size: 22px; */
+  font-weight: 700;
+  margin-bottom: 20px;
+  animation: fadeInUp 0.5s ease-in-out 0.2s;
+  animation-fill-mode: both; /* Stop from showing at start */
 }
 
-/* Animations */
+.section-inner a,
+.section-right a {
+  animation: fadeInUp 0.5s ease-in-out 0.4s;
+  animation-fill-mode: both; /* Stop from showing at start */
+}
 
+/* Background images */
+.section-a {
+  background-image: url("../img/section-a.webp");
+}
+.section-b {
+  background-image: url("../img/section-b.webp");
+}
+.section-c {
+  background-image: url("../img/section-c.webp");
+}
+.section-d {
+  background-image: url("../img/section-d.webp");
+}
+.section-e {
+  background-image: url("../img/section-e.webp");
+}
+.section-f {
+  background-image: url("../img/section-f.webp");
+}
+
+/* animaciones */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -645,23 +611,98 @@ footer ul li a:hover {
     margin-bottom: 20px;
   }
 }
-
-/**/
-ul.social-list {
-  padding: 0;
-  list-style: none;
-  margin: 0;
+/* fin - animaciones */
+/*******************/
+/* EQUIPO */
+.seccion-equipo {
+  position: relative;
+  padding-top: 90px;
+  height: 100vh;
+  display: block;
+  background-image: url("/img/campo_juego.webp");
 }
 
-ul.social-list li {
-  display: inline-block;
-  list-style: none;
-  list-style-position: outside;
-  list-style-image: none;
-  list-style-type: none;
-  line-height: 30px;
+.seccion-equipo .container {
+  /* left:100px;  */
+  width: 100%;
+  margin: 0px;
+  /* justify-content: space-around; */
 }
 
-.mg-b-100 {
+.seccion-equipo .container .item {
+  width: 100%;
+}
+
+img.portada {
+  padding: 10px 0px;
+  width: 80%;
+}
+
+#alineacion {
+  margin-top: 50px;
+}
+
+#imagenes {
+  padding-top: 50px;
   padding-bottom: 100px;
-} 
+}
+
+#imagenes.container {
+  padding-left: 0px;
+  padding-right: 0px;
+  align-content: space-between;
+}
+
+#imagenes.container img {
+  width: 250px;
+  aspect-ratio: 1;
+  margin: 0.8rem;
+  filter: grayscale(1);
+  transition: 0.5s;
+}
+
+#imagenes .ficha-jugador {
+  padding: 0px;
+  margin: 0px;
+  font-weight: 700;
+}
+
+#imagenes.container img:hover {
+  filter: grayscale(0);
+}
+
+.botones {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  transform: translate(-530px, -50px);
+  padding: 0;
+}
+
+/****************************/
+/* Pruebas    */
+
+* {
+  /* outline:  dotted red; */
+}
+section img {
+  /* background-color: gray; */
+  /* width: 80%; */
+  /* aspect-ratio: 2/1; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+img,
+.item {
+  /* background-color: gray; */
+}
