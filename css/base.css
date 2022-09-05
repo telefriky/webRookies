@@ -42,7 +42,7 @@ h3,
 h4,
 h5,
 p,
-li,
+li,fieldset,
 a {
   font-family: "Familjen Grotesk", sans-serif;
 }
@@ -498,22 +498,44 @@ section {
 
 /* Background images */
 .section-a {
-  background-image: url("../img/section-a.webp");
+  background-image: url("/img/section-a.webp");
 }
 .section-b {
-  background-image: url("../img/section-b.webp");
+  background-image: url("/img/section-b.webp");
 }
 .section-c {
-  background-image: url("../img/section-c.webp");
+  background-image: url("/img/section-c.webp");
 }
 .section-d {
-  background-image: url("../img/section-d.webp");
+  background-image: url("/img/section-d.webp");
 }
 .section-e {
-  background-image: url("../img/section-e.webp");
+  background-image: url("/img/section-e.webp");
 }
 .section-f {
-  background-image: url("../img/section-f.webp");
+  background-image: url("/img/section-f.webp");
+}
+
+.section-about {
+  background-image: url("/img/campo_juego.webp");
+}
+
+.section-about .section-inner {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  max-width: 560px;
+}
+
+.section-contacta {
+  background-image: url("/img/campo_juego.webp");
+}
+
+.section-contacta .section-inner {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  max-width: 560px;
 }
 
 /* animaciones */
