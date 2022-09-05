@@ -229,34 +229,34 @@
             "posicion": "QB"
         }
     ],
-    "SR_FEMENINO": [
+    "SRFEMENINO": [
         {
             "dorsal": 10,
             "nombre": "Nombre",
             "apellidos": "jugador",
             "posicion": "QB",
-            "imagen": "sr_femenino_jugador_10.jpg"
+            "imagen": "srfemenino_jugador_10.jpg"
         },
         {
             "dorsal": 11,
             "nombre": "Nombre",
             "apellidos": "jugador",
             "posicion": "QB",
-            "imagen": "sr_femenino_jugador_11.jpg"
+            "imagen": "srfemenino_jugador_11.jpg"
         },
         {
             "dorsal": 12,
             "nombre": "Nombre",
             "apellidos": "jugador",
             "posicion": "QB",
-            "imagen": "sr_femenino_jugador_12.jpg"
+            "imagen": "srfemenino_jugador_12.jpg"
         },
         {
             "dorsal": 13,
             "nombre": "Nombre",
             "apellidos": "jugador",
             "posicion": "QB",
-            "imagen": "sr_femenino_jugador_13.jpg"
+            "imagen": "srfemenino_jugador_13.jpg"
         },
         {
             "dorsal": 14,
@@ -373,13 +373,13 @@
             "posicion": "QB"
         }
     ],
-    "SR_MASCULINO": [
+    "SRMASCULINO": [
         {
             "dorsal": 10,
             "nombre": "Nombre",
             "apellidos": "jugador",
             "posicion": "QB",
-            "imagen": "sr_masculino_jugador_10.jpg"
+            "imagen": "srmasculino_jugador_10.jpg"
         },
         {
             "dorsal": 11,
