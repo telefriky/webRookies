@@ -1,9 +1,11 @@
-.container {
-  max-width: 800px;
+ .section-contacta div.container {
   width: 100%;
-  margin: 0 auto;
-  position: relative;
-}
+  padding-top: 0px;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+} 
 
 #contact input[type="text"],
 #contact input[type="email"],
@@ -11,13 +13,13 @@
 #contact input[type="url"],
 #contact textarea,
 #contact button[type="submit"] {
-  font: 20px;
+  font: 2rem;
 }
 
 #contact {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.7);
   padding: 25px;
-  margin: 150px 0;
+  margin: 100px 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
@@ -43,7 +45,7 @@
 }
 
 fieldset {
-  border: medium none !important;
+  border: medium none;
   margin: 0 0 10px;
   min-width: 100%;
   padding: 0;
@@ -76,7 +78,7 @@ fieldset {
 }
 
 #contact textarea {
-  height: 100px;
+  height: 150px;
   max-width: 100%;
   resize: none;
 }
@@ -99,9 +101,9 @@ fieldset {
   z-index: 2;
 }
 
-.copyright {
+/* .copyright {
   text-align: center;
-}
+} */
 
 #contact input:focus,
 #contact textarea:focus {
@@ -125,3 +127,10 @@ fieldset {
   color: #ddd;
 }
 
+@media (max-width: 960px) {
+  
+}
+
+@media (max-width: 600px) {
+
+}
