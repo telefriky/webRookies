@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/equipo.css" />
+    <link rel="icon" type="/img/png" href="/favicon.ico" />
+
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <!-- <link rel="stylesheet" href="/css/equipo.css" /> -->
     <!-- <link rel="stylesheet" href="/css/galeria.css" /> -->
     <script src="/js/script.js" defer></script>
     <script src="/js/w3-script.js" defer></script>
@@ -14,7 +17,7 @@
       src="https://kit.fontawesome.com/7de5edc367.js"
       crossorigin="anonymous"
     ></script>
-    <title>Barbera Rookies</title>
+    <title>Barberà Rookies</title>
   </head>
   <body>
     <div id="overlay"></div>
@@ -66,29 +69,55 @@
       <span class="hamburger-bottom"></span>
     </button>
 
-    <section class="section-sr-femenino">
-      <div class="section-inner-center">
-        <h2>Senior Femenino</h2>
-        <h3>Campeonas de España 2022</h3>
-        <a href="./sr_femenino.html#alineacion" class="btn">
-          <div class="hover"></div>
-          <span>Alineacion</span>
-        </a>
-        <a href="/galeria/sr_femenino.html" class="btn">
-          <div class="hover"></div>
-          <span>Galeria</span>
-        </a>
+    <section class="seccion-equipo">
+      <div class="container">
+        <div class="item">
+          <h3 class="semi-transparente">Senior Femenino</h3>
+        </div>
+        <div class="item">
+          <img
+            class="portada"
+            src="./portadas/portada_sr_femenino.jpg"
+            alt=""
+          />
+        </div>
+        <div class="item">
+          <div class="botones container">
+            <a href="./sr_femenino.html#alineacion" class="btn">
+              <div class="hover"></div>
+              <span>Alineación</span>
+            </a>
+            <a href="/galeria/sr_femenino.html" class="btn">
+              <div class="hover"></div>
+              <span>Galeria</span>
+            </a>
+          </div>
+        </div>
       </div>
+      >
     </section>
 
-    <section class="block section-inner-alineacion">
-      <div class="item"><a name="alineacion"></a></div>
+    <section class="seccion-alineacion">
       <div class="container">
-        <div class="item-center"><h3>Las jugadoras</h3></div>
-        <div id="imagenes" class="container"></div>
+        <div id="alineacion" class="item">
+          <div id="imagenes" class="item container"></div>
+        </div>
       </div>
     </section>
 
     <div w3-include-html="/includes/footer.html"></div>
+
+    <script>
+      const cargaImagenes = async () => {
+        // carga datos e imagenes
+        const datos = await fetch("/equipo/datos.json")
+          .then((response) => response.json())
+          .then((data) => {
+            const ruta = data.CONFIG[0].ruta;
+            const datosCategoria = data.SRFEMENINO;
+            loadImages("imagenes", ruta, datosCategoria);
+          });
+      };
+    </script>
   </body>
 </html>

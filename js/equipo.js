@@ -5,10 +5,11 @@ const loadImages = (nodo,ruta, datos) => {
 
   datos.map((item) => {
 
-    const url_imagen = ruta + "img/" + item.imagen;
+
+    const url_imagen = ruta + "img/" + (!item.imagen ? "desconocido.jpg" : item.imagen);
 
     var div = document.createElement("div");
-    div.classList.add("item")
+    div.classList.add("ficha-jugador")
 
     var img = document.createElement("img");
     img.src = url_imagen;
@@ -17,28 +18,17 @@ const loadImages = (nodo,ruta, datos) => {
 
     div.appendChild(img)
 
-    var h4_nombre = document.createElement("h4");
-    h4_nombre.innerText = `#${item.dorsal} - ${item.nombre} ${item.apellidos}`
-    div.appendChild(h4_nombre)
+    var _nombre = document.createElement("p");
+    _nombre.innerText = `#${item.dorsal} - ${item.nombre} ${item.apellidos}`
+    div.appendChild(_nombre)
 
-    var h4_apellidos = document.createElement("h4");
-    h4_apellidos.innerText = item.posicion
-    div.appendChild(h4_apellidos)
+    var _apellidos = document.createElement("p");
+    _apellidos.innerText = item.posicion
+    div.appendChild(_apellidos)
 
     imagenes.appendChild(div)
 
   });
-}
-
-const cargaImagenes = async () => {
-  // carga datos e imagenes
-  const datos = await fetch("/equipo/datos.json")
-    .then((response) => response.json())
-    .then((data) => {
-      const ruta = data.CONFIG[0].ruta;
-      const datosCategoria = data.SR_FEMENINO
-      loadImages("imagenes",ruta, datosCategoria)
-    });
 }
 
 cargaImagenes();

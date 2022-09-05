@@ -4,27 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="/img/png" href="/favicon.ico" />
+
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <!-- <link rel="stylesheet" href="/css/equipo.css" /> -->
+    <!-- <link rel="stylesheet" href="/css/galeria.css" /> -->
     <script src="/js/script.js" defer></script>
-    <base href="/">
-    <title>Rookies - Cadete</title>
+    <script src="/js/w3-script.js" defer></script>
+    <script src="/js/equipo.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/7de5edc367.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Barberà Rookies</title>
   </head>
   <body>
     <div id="overlay"></div>
     <div id="mobile-menu" class="mobile-main-menu">
       <ul>
-        <li class="mobile-only"><a href="/equipo/sr_femenino.html">Senior Femenino</a></li>
+        <li class="mobile-only">
+          <a href="/equipo/sr_femenino.html">Senior Femenino</a>
+        </li>
         <li class="mobile-only"><a href="/equipo/junior.html">Junior</a></li>
         <li class="mobile-only"><a href="/equipo/cadete.html">Cadete</a></li>
         <li class="mobile-only"><a href="/equipo/flag.html">Flag</a></li>
         <li class="mobile-only"></li>
-        <li><a href="#">Historia</a></li>
-        <li><a href="#">Palmares</a></li>
-        <li><a href="#">Galeria</a></li>
-        <li><a href="#">Clupik</a></li>
+        <li><a href="/historia.html">Historia</a></li>
+        <li><a href="/palmares.html">Palmares</a></li>
+        <li><a href="/galeria.html">Galeria</a></li>
+        <li>
+          <a href="https://barberarookiescfa.clupik.app/es" target="_blank"
+            >Clupik</a
+          >
+        </li>
         <li class="mobile-only"></li>
-        <li class="mobile-only"><a href="about.html">Quien somos</a></li>
-        <li class="mobile-only"><a href="contacta.html">Contacta</a></li>
+        <li class="mobile-only"><a href="/about.html">Quien somos</a></li>
+        <li class="mobile-only"><a href="/contacta.html">Contacta</a></li>
       </ul>
     </div>
 
@@ -40,9 +56,9 @@
           <li><a href="/equipo/junior.html">Junior</a></li>
           <li><a href="/equipo/cadete.html">Cadete</a></li>
           <li><a href="/equipo/flag.html">Flag</a></li>
-          <li><a href="about.html">Quien somos</a></li>
-          <li><a href="contacta.html">Contacta</a></li>
-          </ul>
+          <li><a href="/about.html">Quien somos</a></li>
+          <li><a href="/contacta.html">Contacta</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -53,35 +69,56 @@
       <span class="hamburger-bottom"></span>
     </button>
 
-    <section class="section-animate bg-cadete"></section>
-    <div class="section-inner-center">
-      <h3>Cadete</h3>
-      <p></p>
-    </div>
-
-    <!-- <div class="stats">
-      <div>
-        <span class="counter" data-target="3">0</span>
-        <h4>Total Launches</h4>
+    <section class="seccion-equipo">
+      <div class="container">
+        <div class="item">
+          <h3 class="semi-transparente">Cadete</h3>
+        </div>
+        <div class="item portada">
+          <img
+            class="portada"
+            src="./portadas/portada_cadete.jpg"
+            alt=""
+            style="padding:150px 0px;"
+          />
+        </div>
+        <div class="item">
+          <div class="botones container">
+            <a href="#alineacion" class="btn">
+              <div class="hover"></div>
+              <span>Alineación</span>
+            </a>
+            <a href="/galeria/cadete.html" class="btn">
+              <div class="hover"></div>
+              <span>Galeria</span>
+            </a>
+          </div>
+        </div>
       </div>
-      <div>
-        <span class="counter" data-target="7">0</span>
-        <h4>Total Landings</h4>
-      </div>
-      <div>
-        <span class="counter" data-target="4">0</span>
-        <h4>Total Reflights</h4>
-      </div>
-    </div> -->
+      >
+    </section>
 
-    <footer>
-      <ul>
-        <li>Barbera Rookies &copy; 2022</li>
-        <li><a href="https://www.youtube.com/channel/UC3IZkWPPrfCodbp2CwZpuZA" target="_blank">YouTube</a></li>
-        <li><a href="https://www.instagram.com/barbera_rookies/" target="_blank">Instagram</a></li>
-        <li><a href="https://www.facebook.com/barberarookiescfa" target="_blank">Facebook</a></li>
-      </ul>
-    </footer>
+    <section class="seccion-alineacion">
+      <div class="container">
+        <div id="alineacion" class="item">
+          <div id="imagenes" class="item container"></div>
+        </div>
+      </div>
+    </section>
 
+    <div w3-include-html="/includes/footer.html"></div>
+
+    <script>
+      const cargaImagenes = async () => {
+        // carga datos e imagenes
+        const datos = await fetch("/equipo/datos.json")
+          .then((response) => response.json())
+          .then((data) => {
+            const ruta = data.CONFIG[0].ruta;
+            const datosCategoria = data.CADETE;
+            loadImages("imagenes", ruta, datosCategoria);
+          });
+      };
+    </script>
   </body>
 </html>

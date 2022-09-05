@@ -1,8 +1,3 @@
-.section-inner-galeria {
-  position: relative;
-  padding-top: 120px;
-}
-
 /* GALERIA */
 .container {
   display: flex;
@@ -17,6 +12,16 @@
   margin-bottom: 15px;
   text-align: auto;
 }
+
+
+.section-inner-galeria .container {
+  position: relative;
+  /* margin: 100px 100px; */
+  padding: 100px 0px;
+  margin: 0px auto;
+
+}
+
 
 .item {
   flex: 0 0 auto;

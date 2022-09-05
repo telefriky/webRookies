@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/base.css" />
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
+        -o-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Familjen Grotesk", sans-serif;
+        background-color: rgb(2, 45, 91);
+        color: #fff;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      section.test {
+        height: 100vh;
+        padding: 50px;
+        text-align: left;
+        color: white;
+      }
+
+      /* ----------------------------------------- */
+      .container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+      }
+
+      .item {
+        flex: 0 0 auto;
+        text-align: center;
+        align-items: center;
+      }
+      /* ----------------------------------------- */
+
+      /* especifico de cartel */
+      .cartel h1 {
+        font-size: 50px;
+      }
+      .cartel h2 {
+        font-size: 40px;
+      }
+      .cartel h3 {
+        font-size: 30px;
+      }
+
+      .cartel h4 {
+        font-size: 20px;
+      }
+      .cartel p {
+        font-size: 16px;
+      }
+
+      .cartel {
+        width: 600px;
+        height: 800px;
+        text-transform: uppercase;
+        /* background-image: url("img/logo-fcfa.png"); */
+        background-repeat: no-repeat;
+        border: #000 1px solid;
+        padding: 20px;
+        z-index: 10;
+        overflow: hidden;
+      }
+
+      .cartel .equipos img {
+        width: 180px;
+      }
+
+      .fondo {
+        display: block;
+        /* position: relative; */
+        width: 600px;
+        height: 800px;
+        /* left: 0px; */
+        /* background-color: rgb(0, 255, 140);  */
+        flex-flow: row;
+        /* z-index: 1; */
+        transform: translate(-600px, 0px);
+      }
+
+      div.fondo .local,
+      div.fondo .visitante {
+        border: none;
+        padding: 0px;
+        margin: 0px;
+        width: 50%;
+        height: 100%;
+        display: inline-block;
+      }
+
+      div.fondo .local {
+        background-color: #cf0404;
+      }
+      div.fondo .visitante {
+        background-color: #4a8dbe;
+      }
+
+      .top,
+      .centro,
+      .bottom {
+        height: 33%;
+      }
+
+      .top {
+        margin-top: 20px;
+      }
+
+      .centro {
+        margin-top: 0px;
+      }
+
+      .bottom {
+        margin-top: 100px;
+      }
+
+      .centro .equipos {
+        width: 33%;
+        height: auto;
+        flex-flow: row;
+        vertical-align: center;
+      }
+
+      .centro .equipos {
+        width: 33%;
+        height: auto;
+        flex-flow: row;
+        vertical-align: center;
+        flex-grow: 1;
+      }
+
+      .equipo_des {
+        overflow: visible;
+      }
+
+      .equipo_des.local h1,
+      .equipo_des.local h2,
+      .equipo_des.local h3,
+      .equipo_des.local h4 {
+        font-weight: 700;
+        text-align: left;
+      }
+
+      .equipo_des.visitante h1,
+      .equipo_des.visitante h2,
+      .equipo_des.visitante h3,
+      .equipo_des.visitante h4 {
+        font-weight: 700;
+        text-align: right;
+      }
+
+      .versus {
+        font-weight: 700;
+        width: 100px;
+      }
+
+      /* depuracion */
+      .item {
+        border: white 1px solid;
+      }
+      /* FIN depuracion */
+    </style>
+  </head>
+
+  <body>
+    <section class="test">
+      <div class="container">
+        <div class="item cartel">
+          <div class="top">
+            <div class="item">
+              <h4>Liga catalana junior</h4>
+            </div>
+            <div class="item liga_logo"><img src="img/logo-fcfa.png" /></div>
+          </div>
+
+          <div class="centro">
+            <div class="item container">
+              <div class="item equipos">
+                <div class="item local_logo"><img src="img/pioners.png" /></div>
+              </div>
+
+              <div class="item versus">
+                <h3>vs</h3>
+              </div>
+
+              <div class="item equipos">
+                <div class="item local_logo"><img src="img/bocs.png" /></div>
+              </div>
+            </div>
+            <div class="item container">
+              <div class="item equipos">
+                <div class="item equipo_des local">
+                  <h4>ciudad</h4>
+                  <h1>PIONERS</h1>
+                </div>
+              </div>
+              <div class="item equipos">
+                <div class="item equipo_des visitante">
+                  <h4>Argentona</h4>
+                  <h1>BOCS</h1>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="bottom">
+            <div class="item"><h4>11:00</h4></div>
+            <div class="item"><h2>Domingo 15 mayo</h2></div>
+            <div class="item">
+              <h4>Paseo Dr. Moragas 268, Barberà del Vallés</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- 
+        <div class="fondo local"></div>
+        <div class="fondo visitante"></div> 
+        -->
+        <!-- REVISAR: cuidado, al formatear texto, se crea un nodo entre fondo local y visitante y se visualiza mal  -->
+        <!-- REVISAR: al cambiar tamaño navegador los fondos se adaptan !!! algo de flex?  -->
+        <div class="fondo">
+          <span><div class="local"></div><div class="visitante"></div></span>
+        </div>
+
+      </div>
+    </section>
+  </body>
+</html>
